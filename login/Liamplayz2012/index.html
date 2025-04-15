@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-84GV2J2NLE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-84GV2J2NLE');
+</script>
+
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <script>
+    window.onload = function() {
+      // Set session for 'loggedIn' and 'password'
+      sessionStorage.setItem('loggedIn', 'true');
+      sessionStorage.setItem('password', 'Liamplayz2012');
+
+      // Redirect to the admin page
+      window.location.href = '/admin.html';
+    };
+  </script>
+</head>
+<body>
+  <h2>Losding...</h2>
+</body>
+</html>
