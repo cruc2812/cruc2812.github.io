@@ -54,20 +54,20 @@
   </style>
 </head>
 <body>
-  <h2>Admin Login</h2>
+  <h2>Login</h2>
   <input type="password" id="inputBox" placeholder="Enter password">
   <button onclick="updateURL()">Login</button>
-  <p><a href="/unblocker.html">Home</a></p>
+  <p><a href="/">Home</a></p>
 
   <div class="footer">
-    This site is still in development and will eventually cost money.
+
   </div>
 
   <script>
     function updateURL() {
       const inputValue = document.getElementById("inputBox").value.trim();
       if (inputValue) {
-        window.location.href = "/login/" + encodeURIComponent(inputValue) + "/index.html";
+        window.location.href = "/" + encodeURIComponent(inputValue) + "/index.html";
       }
     }
   </script>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-84GV2J2NLE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-84GV2J2NLE');
+</script>
+
+  <meta charset="UTF-8">
+  <title>Website Unblocker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div style="position: fixed; bottom: 0; width: 100%; text-align: center; padding: 10px; background: #f1f1f1; color: #333; font-size: 14px; border-top: 1px solid #ccc;">
+    This site is still in development and will eventually cost money.
+  </div>
+  
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #ffffff;
+      color: rgb(0, 0, 0);
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+    }
+    #errorBox {
+      color: red;
+      font-size: 18px;
+      display: none;
+    }
+    #consentBox {
+      text-align: center;
+    }
+    #gameFrame {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    input {
+      width: 300px;
+    }
+
+    #watermark {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <div id="errorBox">Access Denied: Invalid Session</div>
+
+  <div id="consentBox">
+    <h1>Website Unblocker</h1>
+    <p>Click the button below to lunch the website unblocker.</p>
+    <script>
+      function launchUnblocker() {
+        // Set session file
+        localStorage.setItem("session_file", "session_file");
+  
+        // Open unblocker in a new tab
+        window.open("/unblockedaccess.html", "_blank");
+      }
+    </script>
+  </head>
+  <body>
+      <button onclick="launchUnblocker()">Launch</button>
+      <p><a href="/adminlogin.html">Admin Login</a></p>
+  </body>
+  </html>
